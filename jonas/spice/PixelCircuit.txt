@@ -1,0 +1,35 @@
+.subckt PhotoDiode VDD N1
+I1  VDD   N1   DC  Ipd_1
+d1 N1 vdd dwell 1
+.model dwell d cj0=1e-14 is=1e-12 m=0.5 bv=40
+Cd1 N1 VDD 30f
+.ends 
+
+
+.subckt pixelcircuit VDD 0 EXPOSE ERASE NRE OUT N2
+
+.param W1 = 5.04U
+.param L1 = 0.36U
+.param W2 = 1.08U
+.param L2 = 0.36U
+.param W3 = 3.36U
+.param L3 = 0.72U
+.param W4 = 5.04U
+.param L4 = 0.36U
+
+X1 VDD N1 PhotoDiode
+M1 N1 expose n2 0 NMOS L=L1 W=W1
+C1 N2 0 3e-12				! Capacitor CS
+M2 N2 erase 0 0 NMOS L=L2 W=W2
+M3 0 N2 N3 VDD PMOS L=L3 W=W3
+M4 N3 nre out VDD PMOS L=L4 W=W4
+
+.ends
+
+
+.subckt activeLoad VDD 0 OUT
+
+M1 OUT OUT VDD VDD PMOS L=0.36e-6 W=5.04e-6
+C1 OUT 0 3e-12
+
+.ends
