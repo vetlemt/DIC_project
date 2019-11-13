@@ -1,0 +1,1915 @@
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 re_control_tb.v : (1, 2): Syntax error. Unexpected token: '.
+# Warning: VCP2515 re_control_tb.v : (21, 63): Undefined module: fsm was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 re_control_tb.v : (1, 2): Syntax error. Unexpected token: '.
+# Warning: VCP2515 re_control_tb.v : (21, 63): Undefined module: fsm was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 re_control_tb.v : (21, 63): Undefined module: fsm was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 re_control_tb.v : (21, 34): Implicit net declaration, symbol exp_dec has not been declared in module re_control_tb.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control re_control_tb.
+# $root top modules: re_control re_control_tb.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# Design: Design re_control already active.
+# 
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 re_control_tb.v (19): Design unit fsm instantiated in re_control.re_control_tb not found in searched libraries: re_control.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 re_control_tb.v (19): Design unit fsm instantiated in re_control.re_control_tb not found in searched libraries: re_control.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 re_control_tb.v (19): Design unit fsm instantiated in re_control.re_control_tb not found in searched libraries: re_control.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Design: Design re_control already active.
+# 
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 re_control_tb.v (19): Design unit fsm instantiated in re_control.re_control_tb not found in searched libraries: re_control.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Design: Design re_control already active.
+# 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 re_control_tb.v (19): Design unit fsm instantiated in re_control.re_control_tb not found in searched libraries: re_control.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Design: Design re_control already active.
+# 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+re_control re_control
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 18 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.8 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5517 kB (elbread=1280 elab2=4103 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:07, Dienstag, 12. November 2019
+#  Simulation has been initialized
+run 1s
+# KERNEL: stopped at time: 1 sec
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/re_control/Expose}
+# add wave -noreg {/re_control/Erase}
+# add wave -noreg {/re_control/ADC}
+# add wave -noreg {/re_control/NRE_1}
+# add wave -noreg {/re_control/NRE_2}
+# add wave -noreg {/re_control/Init}
+# add wave -noreg {/re_control/Exp_increase}
+# add wave -noreg {/re_control/Exp_decrease}
+# add wave -noreg {/re_control/Reset}
+# 9 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: stopped at time: 2 sec
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control re_control
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 18 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5517 kB (elbread=1280 elab2=4103 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:08, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: stopped at time: 1 sec
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 re_control_tb.v : (21, 63): Undefined module: re_contorl was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 re_control_tb.v : (21, 34): Implicit net declaration, symbol exp_dec has not been declared in module re_control_tb.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control re_control_tb.
+# $root top modules: re_control re_control_tb.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control re_control
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 18 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5517 kB (elbread=1280 elab2=4103 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:08, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: stopped at time: 1 sec
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 re_control_tb.v : (21, 34): Implicit net declaration, symbol exp_dec has not been declared in module re_control_tb.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+run 1s
+# KERNEL: stopped at time: 2 sec
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control re_control
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 18 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5517 kB (elbread=1280 elab2=4103 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:09, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: stopped at time: 1 sec
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/re_control/Clk}
+# 1 signal(s) traced.
+# add wave -noreg {/re_control/CLK}
+# 1 signal(s) traced.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control re_control
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 18 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5517 kB (elbread=1280 elab2=4103 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:10, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run @1sec
+# KERNEL: stopped at time: 1 sec
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control re_control
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 18 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5517 kB (elbread=1280 elab2=4103 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:10, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 0.1s
+# KERNEL: stopped at time: 100 ms
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 re_control_tb.v : (21, 34): Implicit net declaration, symbol exp_dec has not been declared in module re_control_tb.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2020 re_control_tb.v : (36, 5): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 re_control_tb.v : (36, 5): Syntax error. Unexpected token: end[_END].
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+run 0.1s
+# KERNEL: stopped at time: 200 ms
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 re_control_tb.v : (21, 34): Implicit net declaration, symbol exp_dec has not been declared in module re_control_tb.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2020 re_control_tb.v : (35, 5): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 re_control_tb.v : (35, 5): Syntax error. Unexpected token: end[_END].
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module re_control found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 re_control_tb.v : (21, 34): Implicit net declaration, symbol exp_dec has not been declared in module re_control_tb.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2020 re_control_tb.v : (36, 5): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 re_control_tb.v : (36, 5): Syntax error. Unexpected token: end[_END].
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module re_control found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 re_control_tb.v : (21, 34): Implicit net declaration, symbol exp_dec has not been declared in module re_control_tb.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 re_control_tb.v : (21, 34): Implicit net declaration, symbol exp_dec has not been declared in module re_control_tb.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +r +m+re_control re_control
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 18 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5517 kB (elbread=1280 elab2=4103 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:13, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 0.1s
+# KERNEL: stopped at time: 100 ms
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 29 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5520 kB (elbread=1280 elab2=4106 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:15, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /re_control/Expose not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/Erase not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/ADC not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/NRE_1 not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/NRE_2 not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/Init not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/Exp_increase not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/Exp_decrease not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/Reset not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/Clk not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /re_control/CLK not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+run 0.1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (35): $finish called.
+# KERNEL: Time: 3 ms,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#31_2@.
+# KERNEL: stopped at time: 3 ms
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/re_control_tb/clk}
+# add wave -noreg {/re_control_tb/reset}
+# add wave -noreg {/re_control_tb/init}
+# add wave -noreg {/re_control_tb/in_flag}
+# add wave -noreg {/re_control_tb/exp_inc}
+# add wave -noreg {/re_control_tb/exp_dec}
+# add wave -noreg {/re_control_tb/expose}
+# add wave -noreg {/re_control_tb/erase}
+# add wave -noreg {/re_control_tb/adc}
+# add wave -noreg {/re_control_tb/nre1}
+# add wave -noreg {/re_control_tb/nre2}
+# 11 signal(s) traced.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 29 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5520 kB (elbread=1280 elab2=4106 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:15, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 0.1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (35): $finish called.
+# KERNEL: Time: 3 ms,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#31_2@.
+# KERNEL: stopped at time: 3 ms
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 29 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5520 kB (elbread=1280 elab2=4106 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:15, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (35): $finish called.
+# KERNEL: Time: 3 ms,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#31_2@.
+# KERNEL: stopped at time: 3 ms
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module re_control found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 29 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5520 kB (elbread=1280 elab2=4106 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:16, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (35): $finish called.
+# KERNEL: Time: 52 ms,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#31_2@.
+# KERNEL: stopped at time: 52 ms
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 29 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5520 kB (elbread=1280 elab2=4107 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:21, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (36): $finish called.
+# KERNEL: Time: 53 ms,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#31_2@.
+# KERNEL: stopped at time: 53 ms
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5520 kB (elbread=1280 elab2=4107 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:23, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /re_control_tb/in_flag not found in C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (37): $finish called.
+# KERNEL: Time: 24 ms,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 24 ms
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5521 kB (elbread=1280 elab2=4107 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  19:26, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (37): $finish called.
+# KERNEL: Time: 23500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 23500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:30, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 29500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 29500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+re_control re_control
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 18 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5517 kB (elbread=1280 elab2=4103 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:31, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: stopped at time: 1 sec
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/re_control/Expose}
+# add wave -noreg {/re_control/Erase}
+# add wave -noreg {/re_control/ADC}
+# add wave -noreg {/re_control/NRE_1}
+# add wave -noreg {/re_control/NRE_2}
+# add wave -noreg {/re_control/Init}
+# add wave -noreg {/re_control/Exp_increase}
+# add wave -noreg {/re_control/Exp_decrease}
+# add wave -noreg {/re_control/Reset}
+# add wave -noreg {/re_control/Clk}
+# 10 signal(s) traced.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:32, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 29500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 29500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/re_control_tb/clk}
+# add wave -noreg {/re_control_tb/reset}
+# add wave -noreg {/re_control_tb/init}
+# add wave -noreg {/re_control_tb/exp_inc}
+# add wave -noreg {/re_control_tb/exp_dec}
+# add wave -noreg {/re_control_tb/expose}
+# add wave -noreg {/re_control_tb/erase}
+# add wave -noreg {/re_control_tb/adc}
+# add wave -noreg {/re_control_tb/nre1}
+# add wave -noreg {/re_control_tb/nre2}
+# 10 signal(s) traced.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:32, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 29500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 29500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module re_control found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:33, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 59500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 59500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:34, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run @1sec
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 29500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 29500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/re_control_tb/re_control/exposure_time}
+# KERNEL: Warning: KERNEL_0085 "/re_control_tb/re_control/exposure_time" does not have read access. Use switch +access +r for this region.
+# 0 signal(s) traced.
+# add wave -noreg {/re_control_tb/re_control/exposure_time}
+# KERNEL: Warning: KERNEL_0085 "/re_control_tb/re_control/exposure_time" does not have read access. Use switch +access +r for this region.
+# 0 signal(s) traced.
+# Error: Memory view:  You do not have a valid license to run Memory View. Contact Aldec for ordering information - sales@aldec.com
+# Error: 
+endsim
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:35, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 29500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 29500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/re_control_tb/re_control/NRE_2}
+# KERNEL: Warning: KERNEL_0085 "/re_control_tb/re_control/NRE_2" does not have read access. Use switch +access +r for this region.
+# 0 signal(s) traced.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:36, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 29500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 29500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:37, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 39500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 39500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4109 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:39, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 39500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 39500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5521 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:40, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 35500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 35500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5521 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:42, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (41): $finish called.
+# KERNEL: Time: 35500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 35500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:43, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (42): $finish called.
+# KERNEL: Time: 36500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 36500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP2643 re_control.v : (58, 40): Decimal number (30) too large for the declared number of bits (4).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:44, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (42): $finish called.
+# KERNEL: Time: 36500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 36500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 re_control.v : (57, 25): Syntax error. Unexpected token: $display[_SYSTEM_DISPLAY].
+# Error: VCP2000 re_control.v : (58, 21): Syntax error. Unexpected token: else[_ELSE].
+# Error: VCP2020 re_control.v : (138, 20): begin...end pair(s) mismatch detected. 2 <end> tokens are missing.
+# Error: VCP2020 re_control.v : (138, 20): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 re_control.v : (138, 20): Syntax error. Unexpected token: endcase[_ENDCASE].
+# Compile failure 5 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:45, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (42): $finish called.
+# KERNEL: Time: 36500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 36500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:46, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# KERNEL: test
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (42): $finish called.
+# KERNEL: Time: 36500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 36500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5522 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:46, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (42): $finish called.
+# KERNEL: Time: 36500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 36500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 28 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5521 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:47, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: test
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (42): $finish called.
+# KERNEL: Time: 35500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 35500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 26 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5521 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:49, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: dec
+# KERNEL: dec
+# KERNEL: reentering idle
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (42): $finish called.
+# KERNEL: Time: 35500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 35500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 26 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5521 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:51, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: dec
+# KERNEL: dec
+# KERNEL: reentering idle
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (42): $finish called.
+# KERNEL: Time: 35500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 35500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+re_control_tb re_control_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 're_control' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1us.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 26 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5521 kB (elbread=1280 elab2=4108 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\verilog\re_control\re_control\src\wave.asdb
+#  20:51, Dienstag, 12. November 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Jonas/Documents/Uni/19W/design_of_integrated_circuits/project/verilog/re_control/re_control/src/wave.asdb'.
+run 1s
+# KERNEL: dec --> 14 ms
+# KERNEL: dec --> 13 ms
+# KERNEL: reentering idle
+# RUNTIME: Info: RUNTIME_0068 re_control_tb.v (42): $finish called.
+# KERNEL: Time: 35500 us,  Iteration: 0,  Instance: /re_control_tb,  Process: @INITIAL#30_2@.
+# KERNEL: stopped at time: 35500 us
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work re_control $dsn/src/re_control.v $dsn/src/re_control_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: re_control_tb.
+# $root top modules: re_control_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+endsim
+# VSIM: Simulation has finished.

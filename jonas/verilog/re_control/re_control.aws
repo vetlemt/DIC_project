@@ -1,0 +1,12 @@
+[Version]
+Version=10.5
+[Designs]
+re_control=.\re_control\re_control.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+re_control=1

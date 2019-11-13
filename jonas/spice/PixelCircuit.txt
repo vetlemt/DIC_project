@@ -12,7 +12,7 @@ Cd1 N1 VDD 30f
 .param L1 = 0.36U
 .param W2 = 1.08U
 .param L2 = 0.36U
-.param W3 = 3.36U
+.param W3 = 1.97U
 .param L3 = 0.72U
 .param W4 = 5.04U
 .param L4 = 0.36U

@@ -7,7 +7,7 @@
                  *                                           *
                  *********************************************
 
-	Date: Sat Oct 26 11:24:26 2019
+	Date: Tue Oct 29 15:09:50 2019
 	Circuit File: C:\Users\Jonas\Documents\Uni\19W\design_of_integrated_circuits\project\git\DIC_project\jonas\spice\spice_sim.cir
 	Analysis: Transient
 
@@ -17,7 +17,7 @@
      2:  
      3:  .param Ipd_1 = 750p ! Photodiode current, range [50 pA, 750 pA]
      4:  .param VDD = 1.8 ! Supply voltage
-     5:  .param EXPOSURETIME = 3m ! Exposure time, range [2 ms, 30 ms]
+     5:  .param EXPOSURETIME = 2m ! Exposure time, range [2 ms, 30 ms]
      6:  
      7:  .param TRF = {EXPOSURETIME/100} ! Risetime and falltime of EXPOSURE and ERASE signals
      8:  .param PW = {EXPOSURETIME} ! Pulsewidth of EXPOSURE and ERASE signals
@@ -273,19 +273,19 @@
 
 *************************  Simulation Statistics  *************************
 
-	Total number of iterations.....................: 1251
-	Number of iterations for transient analysis....: 1228
-	Total number of timepoints.....................: 387
-	Number of timepoints accepted..................: 362
-	Number of timepoints rejected..................: 25
-	Total analysis time (sec)......................: 0.13
-	Transient analysis time (sec)..................: 0.124
-	Time spent in device loading (sec).............: 0.005
-	Time spent in L-U decomposition (sec)..........: 0
+	Total number of iterations.....................: 2074
+	Number of iterations for transient analysis....: 2051
+	Total number of timepoints.....................: 611
+	Number of timepoints accepted..................: 551
+	Number of timepoints rejected..................: 60
+	Total analysis time (sec)......................: 0.203
+	Transient analysis time (sec)..................: 0.2
+	Time spent in device loading (sec).............: 0.023
+	Time spent in L-U decomposition (sec)..........: 0.004
 	Time spent in matrix reordering (sec)..........: 0
-	Time spent in matrix solving (sec).............: 0
-	Time spent in transient L-U decomposition (sec): 0
-	Time spent in transient matrix solving (sec)...: 0
+	Time spent in matrix solving (sec).............: 0.002
+	Time spent in transient L-U decomposition (sec): 0.004
+	Time spent in transient matrix solving (sec)...: 0.002
 
 ***************************  Kernel Messages  *****************************
 
