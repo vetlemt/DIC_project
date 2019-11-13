@@ -1,11 +1,11 @@
 [aimspice]
 [description]
-415
+469
 Photo diode
 
 VDD vdd 0 DC 1.8V
-Vexpose expose 0 DC 1.8V
-Verase  erase  0 DC 0V
+Vexpose expose 0 PULSE (0V 1.8V 0s 0.1us 30ms)
+Verase  erase  0 PULSE (0V 1.8V 0s 30.01ms)
 VNRE    NRE    0 DC 0V
 
 .param Ipd_1 = 750n
@@ -16,7 +16,9 @@ M2 N2 erase  0   0   NMOS L = 0.36u W = 1.08u
 M3 0 	N2 	 N3  vdd PMOS L = 0.36u W = 1.08u
 M4 N3 NRE 	 out vdd PMOS L = 0.36u W = 1.08u
 
-Cs N2 0 3p
+Cs N2 0 3pF
+
+.plot 
 
 .include .\Photo-diode.sub
 .include .\p18_cmos_models.inc
@@ -36,7 +38,7 @@ X
 4 1
 0
 1 1
-1 1 1.3377 1.3378
+1 1 -0.5 1.5
 1
 v(n2)
 [end]
