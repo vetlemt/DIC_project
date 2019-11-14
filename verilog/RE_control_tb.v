@@ -35,6 +35,8 @@ module RE_control_tb();
     #2000 init = 0;
     #17000 init = 1;
     #1500 init = 0;
+    #20000 init = 1;
+    #2000 init = 0;
     end
     
     initial begin
@@ -47,7 +49,14 @@ module RE_control_tb();
     
     initial begin
     decrease = 0;
+    #12000 decrease = 1;
+    #4000 decrease = 0;
+    end
+    
+    initial begin
     reset = 0;
+    #50000 reset = 1;
+    #1500 reset = 0;
     end
     
 endmodule

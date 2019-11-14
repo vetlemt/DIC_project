@@ -32,6 +32,8 @@ module RE_control(
     reg expose_r;
     reg erase_r;
     reg [2:0] R [9:0];
+    reg exp_plus;
+    reg exp_minus;
     
     initial begin
         state = idle;
@@ -143,12 +145,10 @@ module RE_control(
          endcase   
          
     // exposure control
-    always @(posedge increase)
-        if (t_exp < 30 && t_exp >= 2)
-            t_exp = t_exp + 1;
-             
-    always @(posedge decrease)
-        if (t_exp <= 30 && t_exp > 2)
-            t_exp = t_exp - 1;
+    always @(posedge clk)
+        if ((increase == 1)&& (t_exp < 30 && t_exp >= 2))
+                t_exp = t_exp + 1;
+        else if((decrease == 1)&& (t_exp <= 30 && t_exp > 2))
+                t_exp = t_exp - 1;
                 
 endmodule
